@@ -23,13 +23,22 @@ namespace fluid_behavior_tree
             var _tree = new BehaviorTreeBuilder(/*gameObject*/null)
            .Sequence()
                .Condition("Custom Condition", () => {
+                   Console.WriteLine("Custom Condition");
                    return true;
                })
-               .Do("Custom Action", () => {
+               .Do("Custom Action 1", () => {
+                   Console.WriteLine("Custom Action 1");
+                   return TaskStatus.Success;
+               })
+               .Do("Custom Action 2", () => {
+                   Console.WriteLine("Custom Action 1");
                    return TaskStatus.Success;
                })
            .End()
            .Build();
+            Console.WriteLine("Run 1");
+            _tree.Tick();
+            Console.WriteLine("Run 2");
             _tree.Tick();
 
             Console.WriteLine("End");
