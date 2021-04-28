@@ -1,0 +1,15 @@
+{
+  "ExpandedNodes": [
+    "",
+    "\\BehaviorTree",
+    "\\Decorators",
+    "\\Icons",
+    "\\Icons\\Status",
+    "\\Samples",
+    "\\TaskParents",
+    "\\TaskParents\\Composites",
+    "\\Tasks",
+    "\\Tasks\\Conditions"
+  ],
+  "PreviewInSolutionExplorer": false
+}

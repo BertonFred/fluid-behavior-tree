@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.31112.23
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "fluid-behavior-tree", "fluid-behavior-tree\fluid-behavior-tree.csproj", "{5C06BBE2-710D-44FF-9240-2FF229F2A99B}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{5C06BBE2-710D-44FF-9240-2FF229F2A99B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{5C06BBE2-710D-44FF-9240-2FF229F2A99B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{5C06BBE2-710D-44FF-9240-2FF229F2A99B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{5C06BBE2-710D-44FF-9240-2FF229F2A99B}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {05BD8BC6-D16C-4577-982D-D6113B00C1FA}
+	EndGlobalSection
+EndGlobal
