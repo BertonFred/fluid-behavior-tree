@@ -1,9 +1,7 @@
 using CleverCrow.Fluid.BTs.Samples;
+using CleverCrow.Fluid.BTs.Trees;
 using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+using CleverCrow.Fluid.BTs.Tasks;
 
 namespace fluid_behavior_tree
 {
@@ -21,6 +19,19 @@ namespace fluid_behavior_tree
             Console.WriteLine("Start T2");
             t2.Awake();
             t2.Update();
+
+            var _tree = new BehaviorTreeBuilder(/*gameObject*/null)
+           .Sequence()
+               .Condition("Custom Condition", () => {
+                   return true;
+               })
+               .Do("Custom Action", () => {
+                   return TaskStatus.Success;
+               })
+           .End()
+           .Build();
+            _tree.Tick();
+
             Console.WriteLine("End");
             Console.ReadKey();
         }
